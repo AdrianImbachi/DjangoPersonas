@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script type="text/javascript" src="{{url_for('static', filename='personas.js')}}"></script>
+    <title>Persona</title>
+</head>
+<body>
+    <h1>Gestión de Personas</h1>
+    <label for="nombre">Buscar por nombre</label>
+    <input style="width: 26%;margin:20px" type="text" class="form-control" id="nombre">
+    <button style="margin:20px" onclick="getPersonabyName()" class="btn btn-primary boton">Buscar</button>
+    <button style="margin:20px" onclick="getPersonas()" class="btn btn-secondary boton">Ver todos</button>
+    <button style="margin:20px" onclick="savePersona()" class="btn btn-info boton">Guardar</button>
+    <div id="content">
+
+    </div>
+    <style>
+        label{padding-left: 20px;}
+        h1{padding-left: 20px; padding-top: 20px;}
+        .boton{font-weight: bolder;}
+        body{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+    </style>
+</body>
+</html>
